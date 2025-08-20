@@ -108,7 +108,7 @@ public class CustomIngameMenuPatch {
 					new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCase", "(Ljava/lang/String;)Z", false),
 					new JumpInsnNode(Opcodes.IFEQ, label1),
 					new VarInsnNode(Opcodes.ALOAD, 2),
-					new MethodInsnNode(Opcodes.INVOKESTATIC, "com/charles445/rltweaker/asm/patch/custommainmenu/CustomLoadingScreenPatch$Hook", "createAdvancementsScreen", "(Lnet/minecraft/client/gui/GuiScreen;)Lnet/minecraft/client/gui/GuiScreen;", false),
+					new MethodInsnNode(Opcodes.INVOKESTATIC, "com/charles445/rltweaker/asm/patch/custommainmenu/CustomIngameMenuPatch$Hook", "createAdvancementsScreen", "(Lnet/minecraft/client/gui/GuiScreen;)Lnet/minecraft/client/gui/GuiScreen;", false),
 					new VarInsnNode(Opcodes.ASTORE, gui),
 					label1,
 					new VarInsnNode(Opcodes.ALOAD, 0),
@@ -117,7 +117,7 @@ public class CustomIngameMenuPatch {
 					new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCase", "(Ljava/lang/String;)Z", false),
 					new JumpInsnNode(Opcodes.IFEQ, label2),
 					new VarInsnNode(Opcodes.ALOAD, 2),
-					new MethodInsnNode(Opcodes.INVOKESTATIC, "com/charles445/rltweaker/asm/patch/custommainmenu/CustomLoadingScreenPatch$Hook", "createStatsScreen", "(Lnet/minecraft/client/gui/GuiScreen;)Lnet/minecraft/client/gui/GuiScreen;", false),
+					new MethodInsnNode(Opcodes.INVOKESTATIC, "com/charles445/rltweaker/asm/patch/custommainmenu/CustomIngameMenuPatch$Hook", "createStatsScreen", "(Lnet/minecraft/client/gui/GuiScreen;)Lnet/minecraft/client/gui/GuiScreen;", false),
 					new VarInsnNode(Opcodes.ASTORE, gui),
 					label2,
 					new VarInsnNode(Opcodes.ALOAD, 0),
@@ -126,7 +126,7 @@ public class CustomIngameMenuPatch {
 					new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "java/lang/String", "equalsIgnoreCase", "(Ljava/lang/String;)Z", false),
 					new JumpInsnNode(Opcodes.IFEQ, label3),
 					new VarInsnNode(Opcodes.ALOAD, 2),
-					new MethodInsnNode(Opcodes.INVOKESTATIC, "com/charles445/rltweaker/asm/patch/custommainmenu/CustomLoadingScreenPatch$Hook", "createOpenToLanScreen", "(Lnet/minecraft/client/gui/GuiScreen;)Lnet/minecraft/client/gui/GuiScreen;", false),
+					new MethodInsnNode(Opcodes.INVOKESTATIC, "com/charles445/rltweaker/asm/patch/custommainmenu/CustomIngameMenuPatch$Hook", "createOpenToLanScreen", "(Lnet/minecraft/client/gui/GuiScreen;)Lnet/minecraft/client/gui/GuiScreen;", false),
 					new VarInsnNode(Opcodes.ASTORE, gui),
 					label3
 			)));
