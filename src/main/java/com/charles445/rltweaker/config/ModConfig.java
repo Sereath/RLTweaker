@@ -124,10 +124,6 @@ public class ModConfig
 		@Config.Name("Scape and Run Parasites")
 		public ConfigSRParasites srparasites = new ConfigSRParasites();
 		
-		@Config.Comment("So Many Enchantments tweaks")
-		@Config.Name("So Many Enchantments")
-		public ConfigSME somanyenchantments = new ConfigSME();
-
 		@Config.Comment("Spawner Control tweaks")
 		@Config.Name("Spawner Control")
 		public ConfigSpawnerControl spawnercontrol = new ConfigSpawnerControl();

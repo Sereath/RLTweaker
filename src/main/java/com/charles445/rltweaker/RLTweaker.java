@@ -38,7 +38,6 @@ import com.charles445.rltweaker.handler.ReskillableHandler;
 import com.charles445.rltweaker.handler.RoguelikeHandler;
 import com.charles445.rltweaker.handler.RuinsHandler;
 import com.charles445.rltweaker.handler.RusticHandler;
-import com.charles445.rltweaker.handler.SMEHandler;
 import com.charles445.rltweaker.handler.SRParasitesHandler;
 import com.charles445.rltweaker.handler.SpawnerControlHandler;
 import com.charles445.rltweaker.handler.TANHandler;
@@ -211,11 +210,6 @@ public class RLTweaker
 		if(Loader.isModLoaded(ModNames.SRPARASITES) && ModConfig.server.srparasites.enabled)
 		{
 			handlers.put(ModNames.SRPARASITES, new SRParasitesHandler());
-		}
-		
-		if(Loader.isModLoaded(ModNames.SOMANYENCHANTMENTS) && ModConfig.server.somanyenchantments.enabled)
-		{
-			handlers.put(ModNames.SOMANYENCHANTMENTS, new SMEHandler());
 		}
 		
 		if(Loader.isModLoaded(ModNames.BATTLETOWERS) && ModConfig.server.battletowers.enabled)
