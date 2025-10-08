@@ -31,7 +31,6 @@ import com.charles445.rltweaker.asm.patch.PatchPotionUpdate;
 import com.charles445.rltweaker.asm.patch.PatchPushReaction;
 import com.charles445.rltweaker.asm.patch.PatchRealBench;
 import com.charles445.rltweaker.asm.patch.PatchReducedSearchSize;
-import com.charles445.rltweaker.asm.patch.PatchRustic;
 import com.charles445.rltweaker.asm.patch.PatchSRPAI;
 import com.charles445.rltweaker.asm.patch.PatchWaystoneScroll;
 import com.charles445.rltweaker.asm.patch.compat.PatchBrokenTransformers;
@@ -127,7 +126,6 @@ public class RLTweakerClassTransformer extends HashMapClassNodeClassTransformer 
 		if (config.patchPotionCoreResistance) PatchPotionCoreResistance.registerTransformers(registry);
 		if (config.patchPotionEntityTrackerUpdate) PatchPotionUpdate.registerTransformers(registry);
 		if (config.patchPushReaction) PatchPushReaction.registerTransformers(registry);
-		if (config.patchRusticWineEffects) PatchRustic.registerTransformers(registry);
 		if (config.patchSRPAI) PatchSRPAI.registerTransformers(registry);
 		if (config.patchSSRandomUpdateHandler) PatchRandomUpdateHandler.registerTransformers(registry);
 		if (config.pathfindingChunkCacheFix) PatchPathfindingChunkCache.registerTransformers(registry);

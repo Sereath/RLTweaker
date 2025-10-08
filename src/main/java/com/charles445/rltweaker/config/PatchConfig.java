@@ -96,10 +96,6 @@ public class PatchConfig
 	public boolean patchCurePotion = true;
 	
 	@Config.RequiresMcRestart
-	@Config.Comment("Enable to make wine potion effect modifications configurable through RLTweaker")
-	public boolean patchRusticWineEffects = true;
-	
-	@Config.RequiresMcRestart
 	@Config.Comment("Fixes modifier books from BountifulBaubles changing the original item when put into an anvil")
 	public boolean patchModifierBooks = true;
 	
