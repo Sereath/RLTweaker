@@ -28,10 +28,6 @@ public class PatchConfig
 	public boolean lessCollisions = true;
 	
 	@Config.RequiresMcRestart
-	@Config.Comment("Allows for mounted combat with BetterCombat")
-	public boolean betterCombatMountFix = true;
-	
-	@Config.RequiresMcRestart
 	@Config.Comment("Fixes RealBench dupe bug")
 	public boolean realBenchDupeBugFix = true;
 
@@ -82,10 +78,6 @@ public class PatchConfig
 	@Config.RequiresMcRestart
 	@Config.Comment("Allows for some hopper tweaks")
 	public boolean patchHopper = false;
-	
-	@Config.RequiresMcRestart
-	@Config.Comment("Allows for critical events with BetterCombat")
-	public boolean betterCombatCriticalsFix = true;
 	
 	@Config.RequiresMcRestart
 	@Config.Comment("Fixes crash with bound scrolls and return scrolls, and removes their unexpected spawn setting")

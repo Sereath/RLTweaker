@@ -7,8 +7,6 @@ import org.objectweb.asm.ClassWriter;
 import com.charles445.rltweaker.asm.configloader.EarlyConfigLoader;
 import com.charles445.rltweaker.asm.patch.PatchAggressiveMotionChecker;
 import com.charles445.rltweaker.asm.patch.PatchAnvilDupe;
-import com.charles445.rltweaker.asm.patch.PatchBetterCombatCriticalsFix;
-import com.charles445.rltweaker.asm.patch.PatchBetterCombatMountFix;
 import com.charles445.rltweaker.asm.patch.PatchBetterNether;
 import com.charles445.rltweaker.asm.patch.PatchBountifulBaubles;
 import com.charles445.rltweaker.asm.patch.PatchBroadcastSounds;
@@ -95,8 +93,6 @@ public class RLTweakerClassTransformer extends HashMapClassNodeClassTransformer 
 		if (config.apngSupportPatch) APNGSupportPatch.registerTransformers(registry);
 		if (config.customIngameMenuPatch) CustomIngameMenuPatch.registerTransformers(registry);
 		if (config.customLoadingScreenPatch) CustomLoadingScreenPatch.registerTransformers(registry);
-		if (config.betterCombatCriticalsFix) PatchBetterCombatCriticalsFix.registerTransformers(registry);
-		if (config.betterCombatMountFix) PatchBetterCombatMountFix.registerTransformers(registry);
 		if (config.contentCreatorRenderUtilMemoryLeak) RenderUtilMemoryLeakPatch.registerTransformers(registry);
 		if (config.craftTweakerFastEntityDefinition) FastEntityDefinitionPatch.registerTransformers(registry);
 		if (config.doorPathfindingFix) PatchDoorPathfinding.registerTransformers(registry);
