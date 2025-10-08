@@ -52,10 +52,6 @@ public class ModConfig
 		@Config.Name("Baubles")
 		public ConfigBaubles baubles = new ConfigBaubles();
 		
-		@Config.Comment("Better Survival tweaks")
-		@Config.Name("Better Survival")
-		public ConfigBetterSurvival bettersurvival = new ConfigBetterSurvival();
-		
 		@Config.Comment("Carry On tweaks")
 		@Config.Name("Carry On")
 		public ConfigCarryOn carryon = new ConfigCarryOn();

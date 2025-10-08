@@ -18,7 +18,6 @@ import com.charles445.rltweaker.debug.DebugUtil;
 import com.charles445.rltweaker.handler.AquacultureHandler;
 import com.charles445.rltweaker.handler.BattleTowersHandler;
 import com.charles445.rltweaker.handler.BaublesHandler;
-import com.charles445.rltweaker.handler.BetterSurvivalHandler;
 import com.charles445.rltweaker.handler.CarryOnHandler;
 import com.charles445.rltweaker.handler.CharmHandler;
 import com.charles445.rltweaker.handler.ClassyHatsHandler;
@@ -187,11 +186,6 @@ public class RLTweaker
 		if(Loader.isModLoaded(ModNames.CARRYON) && ModConfig.server.carryon.enabled)
 		{
 			handlers.put(ModNames.CARRYON, new CarryOnHandler());
-		}
-		
-		if(Loader.isModLoaded(ModNames.BETTERSURVIVAL) && ModConfig.server.bettersurvival.enabled)
-		{
-			handlers.put(ModNames.BETTERSURVIVAL, new BetterSurvivalHandler());
 		}
 		
 		if(Loader.isModLoaded(ModNames.BAUBLES) && ModConfig.server.baubles.enabled)
