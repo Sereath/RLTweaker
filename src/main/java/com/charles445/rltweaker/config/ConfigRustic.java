@@ -13,4 +13,8 @@ public class ConfigRustic
 	@Config.Name("Wood Harvest Tool Fix")
 	@Config.RequiresMcRestart
 	public boolean woodHarvestToolFix = false;
+	
+	@Config.Comment("Validates containers when players have the UI open to prevent dupes")
+	@Config.Name("Validate Containers")
+	public boolean validateContainers = true;
 }
